@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_mi {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+            color: white;
+            text-align: center;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_mi {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Michelangelo</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_mi">
+            <img src="/imagens/michelangelo.jpg">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Pintor italiano</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    06/03/1475
+                </p>
+                <p><strong>Data da Morte</strong>18/02/1564 (aos 88 anos)</p>
+                <br><br><br>
+            </div>
+
+        </aside>
+        <section class=" principal">
+            <h1>
+                Obras
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="/imagens/Tondo Doni-1506.jpeg">
+
+                    <div class="">
+                        <h2>Tondo Doni</h2>
+                        <p>Galeria Uffizi, em Florença, Itália</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="imagens/Dilúviu 1509.jpeg">
+
+                    <div class="">
+                        <h2>O Dilúviu Universal</h2>
+                        <p>Capela Sistina, Vaticano </p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="/imagens/Adam and Eve 1512.jpeg">
+
+                    <div class="">
+                        <h2>Adão e Eva</h2>
+                        <p>Capela Sistina, Vaticano</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="imagens/Escravo morrendo 1516.jpeg">
+
+                    <div class="">
+                        <h2>O Escravo Moribundo</h2>
+                        <p>Museu do Louvre, em Paris, França</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1> Desenvolvido por Isabela Rangel </h1>
+    </footer>
+    </footer>
+    </div>
+</body>
+
+</html>
